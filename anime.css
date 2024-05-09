@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap");
+
+:root {
+  --red: #e50914;
+  --black: #000000;
+  --light-color: #181818;
+  --box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--red);
+  font-size: 2rem;
+}
+.copyright .logo {
+  color: var(--red);
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+.copyright p {
+  font-size: 0.9rem;
+  color: var(--red);
+  font-size: 2rem;
+}
+
+html {
+  font-size: 63.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--black);
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  z-index: 12;
+}
+section {
+  padding: 0.8rem 3rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--red);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+.btn:hover {
+  background: var(--black);
+  color: var(--red);
+  letter-spacing: 1rem;
+}
+header .logo {
+  color: var(#fff);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo i {
+  color: var(--red);
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  border-radius: 6rem;
+  padding: 0.5rem 1.5rem;
+  color: var#fff;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: #fff;
+  background: var(--red);
+}
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #fff;
+  border-radius: 50%;
+  background: var(--red);
+}
+.home {
+  padding: 0;
+}
+.home .box {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-end;
+  padding: 2rem 9%;
+}
+.home .box.second {
+  justify-content: flex-start;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: var(--red);
+  background: #fff;
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+.carousel-item img {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150vh;
+  filter: brightness(100%);
+}
+.box {
+  background: rgba(0, 0, 0, 0, 0.5);
+  width: 100%;
+  height: 25px;
+  padding: 130px;
+}
+.box p {
+  text-align: justify;
+}
+
+.home {
+  padding: 0;
+}
+
+.home .box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: flex-end;
+  padding: 2rem 9%;
+}
+
+.home .box.second {
+  justify-content: flex-start;
+}
+.home .box .content {
+  width: 0rem;
+}
+.home .box .content h3 {
+  font-size: 6rem;
+  color: #fff;
+  padding: top;
+  text-transform: uppercase;
+}
+.home .box .content p {
+  line-height: 2;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* media query */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .icons #menubar {
+    display: inline-block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 0 0);
+  }
+
+  header .navbar .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: var(--red);
+  }
+}
+
+@media (max-width: 468) {
+  html {
+    font-size: 50%;
+  }
+}
+.heading {
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+.anime {
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+.animes {
+    display: flex;
+    width: 100px;
+    height: 200px;
+}
+ 
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    padding-bottom: 10px;
+    filter: brightness(100%);
+}
+.head {
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    display: none;
+
+}
+body {
+    background-color: black;
+}
+.data {
+  display: flex;
+ padding-top: 15%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  width: 250px;
+  position: absolute;
+  background: #161616;
+  z-index: 1;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
+}
+.container .head {
+  color: #fbfdce;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 3px;
+  background: linear-gradient(30deg,red, black);
+}
+ol {
+  width: 100%;
+  list-style: none;
+}
+ol li {
+  display: block;
+  width: 100%;
+}
+ol li a {
+  color: #fbfdce;
+  padding: 15px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+ol li a i {
+  width: 70px;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 30px;
+}
+ol li:hover a {
+ background: #f30707; 
+ color: #003cff;
+ letter-spacing: 5px;
+}
+input {
+  --webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+span {
+  position: absolute;
+  right: -40px;
+  top: 30px;
+  font-size: 25px;
+  border-radius: 3px;
+  color: #fff;
+  padding: 3px 8px;
+  cursor: pointer;
+  background: #000;
+}
+#bars {
+ background: red; 
+}
+#check:checked ~ .container {
+  transform: translateX(0);
+}
+#check:checked ~ .container #bars {
+ display: none;
+} 
+
+#check:checked ~ section {
+transform: scale(1.2);  
+filter: brightness(20%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
