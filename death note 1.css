@@ -1,0 +1,14 @@
+body {
+    background: black;
+  }
+  button {
+    background:red;
+    border-radius: 10%;
+   
+  }
+  button:hover {
+    background: var(--black);align-self: start;
+    color: var(--red);
+    letter-spacing: 1rem;
+  }
+  

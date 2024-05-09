@@ -1,0 +1,13 @@
+body {
+  background: black;
+}
+button {
+  background:red;
+  border-radius: 10%;
+ 
+}
+button:hover {
+  background: var(--black);
+  color: var(--red);
+  letter-spacing: 1rem;
+}
